@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_font">17sp</dimen>
+    <dimen name="default_font_secondary">15sp</dimen>
+    <dimen name="default_font_tertiary">13sp</dimen>
+    <dimen name="default_font_secondary_list">@dimen/default_font_tertiary</dimen>
+    <dimen name="default_font_collapsed_title">21sp</dimen>
+    <dimen name="default_font_button">@dimen/default_font</dimen>
+    <dimen name="default_font_list_title">@dimen/default_font</dimen>
+    <dimen name="default_font_list_sub_title">@dimen/default_font_secondary_list</dimen>
+    <dimen name="default_font_group_title">14sp</dimen>
+
+    <dimen name="preview_container_height_percentage">0.3</dimen>
+
+    <dimen name="group_container_radius">26dp</dimen>
+    <dimen name="group_padding_sides">24dp</dimen>
+    <dimen name="group_margin_bottom">20dp</dimen>
+    <dimen name="group_title_margin_bottom">3dp</dimen>
+
+    <dimen name="default_btn_height">50dp</dimen>
+    <dimen name="default_btn_radius">100dp</dimen>
+    <dimen name="default_btn_width_percentage">0.8</dimen>
+    <dimen name="default_btn_margin_bottom_screen">26dp</dimen>
+    <dimen name="default_btn_margin_bottom">10dp</dimen>
+
+    <dimen name="btn_container_padding_top_bottom">10dp</dimen>
+
+    <dimen name="list_item_min_height">65dp</dimen>
+    <dimen name="list_item_divisor_horizontal">1dp</dimen>
+    <dimen name="list_item_divisor_vertical">1dp</dimen>
+    <dimen name="list_item_divisor_space_sides">10dp</dimen>
+    <dimen name="list_item_padding_top_bottom">14dp</dimen>
+
+    <dimen name="list_button_color_example">25dp</dimen>
+
+    <dimen name="switch_radius">100dp</dimen>
+    <dimen name="switch_size">21dp</dimen>
+    <dimen name="switch_thumb_border">2dp</dimen>
+    <dimen name="switch_padding_top_bottom">2dp</dimen>
+
+    <dimen name="popup_width_percentage">1</dimen>
+    <dimen name="popup_margin">10dp</dimen>
+    <dimen name="popup_padding">22dp</dimen>
+    <dimen name="popup_radius">26dp</dimen>
+    <dimen name="popup_button_text">@dimen/default_font_button</dimen>
+    <dimen name="popup_button_height">33dp</dimen>
+    <dimen name="popup_button_divisor_width">1dp</dimen>
+    <dimen name="popup_title">@dimen/default_font</dimen>
+    <dimen name="popup_list_margin_top_bottom">10dp</dimen>
+    <dimen name="popup_subtitle">@dimen/default_font_secondary</dimen>
+
+    <dimen name="popup_color_width_percentage">1</dimen>
+
+    <dimen name="popup_loading_loader">40dp</dimen>
+
+    <dimen name="popup_grid_picker_font">@dimen/default_font</dimen>
+    <dimen name="popup_grid_picker_font_subtitle">@dimen/default_font_secondary</dimen>
+
+    <dimen name="picker_item_padding_top_bottom">10dp</dimen>
+    <dimen name="picker_item_padding_sides">3dp</dimen>
+
+    <dimen name="progress_bar_height">4dp</dimen>
+    <dimen name="progress_bar_radius">500dp</dimen>
+
+    <dimen name="color_picker_selector">15dp</dimen>
+    <dimen name="color_picker_hue_height">17dp</dimen>
+    <dimen name="color_picker_transparency_height">@dimen/color_picker_hue_height</dimen>
+    <dimen name="color_picker_space">22dp</dimen>
+    <dimen name="color_picker_label">@dimen/default_font_tertiary</dimen>
+    <dimen name="color_picker_value">@dimen/default_font_secondary</dimen>
+    <dimen name="color_picker_palette_item_height">30dp</dimen>
+    <dimen name="color_picker_palette_item_border">1dp</dimen>
+
+    <dimen name="input_border_width">2dp</dimen>
+
+    <dimen name="radio_size">29dp</dimen>
+    <dimen name="radio_checkbox_text">@dimen/default_font_list_title</dimen>
+    <dimen name="radio_checkbox_text_margin_left">15dp</dimen>
+
+    <dimen name="alignment_btn_icon">24dp</dimen>
+    <dimen name="alignment_btn_padding">18dp</dimen>
+
+    <dimen name="menu_radius">17dp</dimen>
+    <dimen name="menu_horizontal_offset">1dp</dimen>
+
+    <dimen name="tool_bar_height">70dp</dimen>
+    <dimen name="tool_bar_padding_top">15dp</dimen>
+    <dimen name="tool_bar_padding_right">8dp</dimen>
+    <dimen name="tool_bar_btn_padding">9dp</dimen>
+
+    <dimen name="app_bar_font_title_collapsed">@dimen/default_font_collapsed_title</dimen>
+    <dimen name="app_bar_font_title_collapsed_margin_start">8dp</dimen>
+
+    <dimen name="floating_btn_radius">500dp</dimen>
+
+    <dimen name="credits_padding">12dp</dimen>
+    <dimen name="credits_text">@dimen/default_font</dimen>
+</resources>

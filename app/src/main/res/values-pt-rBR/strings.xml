@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="generate">Selecionar &amp; Gerar</string>
+
+    <string name="word_text">Texto</string>
+
+    <string name="toast_error_generic">Algo deu errado!</string>
+    <string name="toast_error_open_folder">Não foi possível abrir a pasta!</string>
+    <string name="toast_error_wrong_type">Selecione apenas arquivos de vídeo!</string>
+
+    <string name="toast_info_sample">A amostra atualiza quando algo mudar!</string>
+
+    <string name="title_name">Nome</string>
+    <string name="title_size">Tamanho</string>
+    <string name="title_resolution">Resolução</string>
+    <string name="title_frames">FPS</string>
+    <string name="title_duration">Duração</string>
+
+    <string name="setting_image_background">Fundo</string>
+    <string name="setting_image_margin">Margem</string>
+    <string name="setting_image_grid">Grade</string>
+
+    <string name="setting_thumbnail">Miniatura</string>
+
+    <string name="setting_thumbnail_max_size">Tamanho</string>
+    <string name="setting_thumbnail_space">Espaço</string>
+    <string name="setting_thumbnail_shadow">Sombra</string>
+
+    <string name="setting_timestamp">Miniatura \u2022 Tempo</string>
+
+    <string name="setting_timestamp_position">Posição</string>
+    <string name="setting_timestamp_margin">Margem</string>
+    <string name="setting_timestamp_size">Tamanho</string>
+    <string name="setting_timestamp_text_color">Texto</string>
+    <string name="setting_timestamp_shadow_color">Sombra</string>
+
+    <string name="setting_title">Cabeçalho</string>
+
+    <string name="setting_title_name">Incluir nome</string>
+    <string name="setting_title_size">Incluir tamanho</string>
+    <string name="setting_title_resolution">Incluir resolução</string>
+    <string name="setting_title_duration">Incluir duração</string>
+    <string name="setting_title_frames">Incluir taxa de quadros</string>
+    <string name="setting_title_title_color">Cor</string>
+    <string name="setting_title_title_size">Tamanho</string>
+    <string name="setting_title_title_space">Espaço entre linhas</string>
+
+    <string name="setting_general">Geral</string>
+
+    <string name="setting_general_font">Fonte</string>
+
+    <string name="setting_output">Saída</string>
+
+    <string name="setting_output_file">Nomear a imagem com o nome do vídeo</string>
+    <string name="setting_output_file_eg_file">Ex.: bigbuckbunny_320x180_24fps.png</string>
+    <string name="setting_output_file_eg_uuid">Ex.: 55fc3352_6e3c_43f7_83cc_892632949d1a.png</string>
+
+    <string name="setting_performance">Performance</string>
+
+    <string name="setting_performance_speed">Precisão alta</string>
+    <string name="setting_performance_speed_message">Se está opção estiver desativada a precisão será reduzida, o que faz a velocidade de geração aumentar, mas pode fazer o tempo das miniaturas estar errado (alguns segundos).</string>
+
+    <string name="setting_app_preview_disable">Desativar amostra</string>
+    <string name="setting_app_preview_enable">Ativar amostra</string>
+
+    <string name="menu_credits">Créditos</string>
+    <string name="menu_github">Projeto no github</string>
+    <string name="menu_info">Infos do app</string>
+
+    <string name="color_picker_hex">Hex</string>
+    <string name="color_picker_alpha">Alfa</string>
+    <string name="color_picker_red">Verm.</string>
+    <string name="color_picker_green">Verde</string>
+    <string name="color_picker_blue">Azul</string>
+
+    <string name="grid_picker_row">Linha</string>
+    <string name="grid_picker_column">Coluna</string>
+
+    <string name="popup_btn_ok">Ok</string>
+    <string name="popup_btn_cancel">Cancelar</string>
+    <string name="popup_btn_set">Definir</string>
+
+    <string name="popup_font">Selecione uma fonte</string>
+
+    <string name="popup_alignment">Selecione uma posição</string>
+
+    <string name="popup_generating">Gerando</string>
+
+    <string name="popup_alignment_top">Em cima</string>
+    <string name="popup_alignment_bottom">Embaixo</string>
+    <string name="popup_alignment_center">No centro</string>
+    <string name="popup_alignment_right">À direita</string>
+    <string name="popup_alignment_left">À esquerda</string>
+
+    <string name="credits">Este app foi feito por <b>Douglas Silva</b> apenas.
+    \n\nOs recursos utilizados estão listados abaixo. <i>As licenças podem ser acessada no final da página.</i>
+    \n\n\u2022 Interface (UI) inpirada na OneUI da Samsung, documentação disponível em <a href="https://design.samsung.com/global/contents/one-ui/download/oneui_design_guide_eng.pdf">https://design.samsung.com/global/contents/one-ui/download/oneui_design_guide_eng.pdf</a>.
+    \n\n\u2022 Alguns icones são do <b>OneUIProject</b>, disponível em <a href="https://github.com/OneUIProject/oneui-icons">https://github.com/OneUIProject/oneui-icons</a>, sob a Licença MIT.
+    \n\n\u2022 \"Roboto\" fonte de <b>Christian Robertson, Paratype e Font Bureau</b>, disponível em <a href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>, sob a Licença Ubuntu Font.
+    \n\n\u2022 \"Roboto Mono\" fonte de <b>Christian Robertson, Paratype e Font Bureau</b>, disponível em <a href="https://fonts.google.com/specimen/Roboto+Mono">https://fonts.google.com/specimen/Roboto+Mono</a>, sob a Licença Ubuntu Font.
+    \n\n\u2022 \"Ubuntu\" fonte de <b>Dalton Maag</b>, disponível em <a href="https://fonts.google.com/specimen/Ubuntu">https://fonts.google.com/specimen/Ubuntu</a>, sob a Licença Open Font.
+    \n\n\u2022 \"Big Buck Bunny\" filme de <b>Blender</b>, disponível em <a href="https://peach.blender.org/download">https://peach.blender.org/download</a>, sob a Licença Commons Attribution 3.0.
+    </string>
+
+    <string name="license_mit">Licença MIT</string>
+    <string name="license_open_font">Licença Open Font</string>
+    <string name="license_ubuntu_font">Licença Ubuntu Font</string>
+    <string name="license_apache_cc_by_3">Licença CC BY 3.0</string>
+
+    <string name="snack_btn_show">MOSTRAR</string>
+    <string name="snack_saved_at_plural">%d arquivos salvos em %s</string>
+    <string name="snack_saved_at_singular">Arquivo salvo em %s</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_min_height"
+    android:paddingTop="@dimen/list_item_padding_top_bottom"
+    android:paddingBottom="@dimen/list_item_padding_top_bottom"
+    android:paddingStart="@dimen/group_padding_sides"
+    android:paddingEnd="@dimen/group_padding_sides"
+    android:foreground="@drawable/list_item_effect"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/listContainer">
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/list_item_title"
+        android:textSize="@dimen/default_font_list_title"
+        android:text="Title"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/itemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/list_item_sub_title_active"
+        android:textSize="@dimen/default_font_list_sub_title"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+</LinearLayout>

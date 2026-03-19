@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/settings">
+        <item
+            android:id="@+id/preview"
+            android:title="@string/setting_app_preview_enable" />
+    </group>
+
+    <group android:id="@+id/project">
+        <item
+            android:id="@+id/credits"
+            android:title="@string/menu_credits" />
+
+        <item
+            android:id="@+id/github"
+            android:title="@string/menu_github" />
+    </group>
+
+    <group android:id="@+id/app">
+        <item
+            android:id="@+id/info"
+            android:title="@string/menu_info" />
+    </group>
+</menu>

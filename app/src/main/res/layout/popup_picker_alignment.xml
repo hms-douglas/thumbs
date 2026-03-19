@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_background_transparent"
+    android:id="@+id/popupContainer">
+
+    <LinearLayout
+        android:id="@+id/popup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/popup_padding"
+        android:layout_margin="@dimen/popup_margin"
+        android:background="@drawable/popup_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintWidth_percent="@dimen/popup_width_percentage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popupTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/popup_alignment"
+                android:textSize="@dimen/popup_title"
+                android:textStyle="bold"
+                android:textColor="@color/popup_title"
+                android:paddingStart="@dimen/picker_item_padding_sides"
+                android:background="@drawable/popup_background"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_list_margin_top_bottom"
+            android:layout_marginBottom="@dimen/popup_list_margin_top_bottom">
+
+            <ImageButton
+                android:id="@+id/topLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/topCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/topLeft"
+                app:layout_constraintEnd_toStartOf="@id/topRight"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/topRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/centerLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintTop_toBottomOf="@id/topLeft"
+                app:layout_constraintBottom_toTopOf="@id/bottomLeft"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/centerCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintTop_toBottomOf="@id/topLeft"
+                app:layout_constraintBottom_toTopOf="@id/bottomLeft"                app:layout_constraintStart_toEndOf="@id/bottomLeft"
+                app:layout_constraintEnd_toStartOf="@id/centerRight"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/centerRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintTop_toBottomOf="@id/topLeft"
+                app:layout_constraintBottom_toTopOf="@id/bottomLeft"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/bottomLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/bottomCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bottomLeft"
+                app:layout_constraintEnd_toStartOf="@id/bottomRight"
+                app:layout_constraintDimensionRatio="1"/>
+
+            <ImageButton
+                android:id="@+id/bottomRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_alignment_off"
+                android:padding="@dimen/alignment_btn_padding"
+                android:foreground="@drawable/btn_alignment_effect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/popupBtnMain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:text="@string/popup_btn_ok"
+            android:textSize="@dimen/popup_button_text"
+            android:background="@drawable/btn_popup_design"
+            android:foreground="@drawable/btn_effect"
+            android:textColor="@color/popup_btn_text"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:elevation="0dp"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
