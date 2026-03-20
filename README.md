@@ -6,7 +6,7 @@
 # <img src="readme/icon.png" width="42px" height="42px"/> Thumbs
 <img src="readme/screenshots/0.png" width="30%"/><img src="readme/screenshots/2.png" width="30%"/><img src="readme/screenshots/1.png" width="30%"/>
 
-¹ The images are from version 1.0.0, newer versions might be different.
+¹ The images are from version 1.0.1, newer versions might be different.
 
 ##
 ### Example of files generated
@@ -81,6 +81,10 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 
 ##
 ### Log
+<b>v1.0.1</b>
+<ul>
+  <li>Fixed a bug where some videos where being rendered with the dimensions inverted.</li>
+</ul>
 <b>v1.0.0</b>
 <ul>
   <li>Release.</li>

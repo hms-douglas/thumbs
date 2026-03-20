@@ -87,13 +87,40 @@ public class ThumbGenerator {
         loadFixedData(videoUri);
     }
 
-    @SuppressLint("Range")
     private void loadFixedData(Uri videoUri) {
         VIDEO_DURATION = Long.parseLong(Objects.requireNonNull(MEDIA_RETRIEVER.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)));
 
-        VIDEO_WH[0] = Integer.parseInt(Objects.requireNonNull(MEDIA_RETRIEVER.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH)));
-        VIDEO_WH[1] = Integer.parseInt(Objects.requireNonNull(MEDIA_RETRIEVER.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT)));
+        loadVideoDimensions();
 
+        loadFileData(videoUri);
+
+        loadVideoFPS(videoUri);
+    }
+
+    private void loadVideoDimensions() {
+        final Bitmap helper = MEDIA_RETRIEVER.getFrameAtTime();
+
+        final int w = Integer.parseInt(Objects.requireNonNull(MEDIA_RETRIEVER.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH))),
+                  h = Integer.parseInt(Objects.requireNonNull(MEDIA_RETRIEVER.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT)));
+
+        if(helper == null) {
+            VIDEO_WH[0] = w;
+            VIDEO_WH[1] = h;
+
+            return;
+        }
+
+        if(helper.getWidth() > helper.getHeight()) {
+            VIDEO_WH[0] = Math.max(w, h);
+            VIDEO_WH[1] = Math.min(w, h);
+        } else {
+            VIDEO_WH[0] = Math.min(w, h);
+            VIDEO_WH[1] = Math.max(w, h);
+        }
+    }
+
+    @SuppressLint("Range")
+    private void loadFileData(Uri videoUri) {
         try {
             if(IS_GENERATING_SAMPLE) {
                 final File file = AppFilesUtils.getCachedSampleFile(CONTEXT);
@@ -119,7 +146,9 @@ public class ThumbGenerator {
 
             HANDLER.post(() -> LISTENER.onError(false));
         }
+    }
 
+    private void loadVideoFPS(Uri videoUri) {
         try {
             final MediaExtractor mediaExtractor = new MediaExtractor();
 
