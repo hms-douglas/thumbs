@@ -30,6 +30,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicIntegerArray;
 
 import dev.dect.thumbs.R;
 import dev.dect.thumbs.adapter.ListButtonColorAdapter;
@@ -994,20 +996,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void generate(List<Uri> uris) {
-        final int[] progress = new int[] {0};
+        final AtomicInteger progress = new AtomicInteger(0),
+                            completed = new AtomicInteger(0);
 
         final ProgressPopup progressPopup = new ProgressPopup(this, R.string.popup_generating);
 
         progressPopup.setMax(THUMB_SETTINGS.getColumnNumber() * THUMB_SETTINGS.getRowNumber() * uris.size());
 
-        progressPopup.setValue(progress[0]);
+        progressPopup.setValue(0);
 
         progressPopup.show();
 
-        Executors.newSingleThreadExecutor().execute(() -> {
-            final int[] completed = {0};
-
-            for(Uri uri : uris) {
+        for(Uri uri : uris) {
+            Executors.newSingleThreadExecutor().execute(() -> {
                 new ThumbGenerator(
                     this,
                     THUMB_SETTINGS,
@@ -1015,15 +1016,15 @@ public class MainActivity extends AppCompatActivity {
                     new ThumbGenerator.OnThumbGenerator() {
                         @Override
                         public void onProgress() {
-                            progressPopup.setValue(++progress[0]);
+                            progressPopup.setValue(progress.incrementAndGet());
                         }
 
                         @Override
                         public void onCompleted() {
-                            if (++completed[0] == uris.size()) {
+                            if(completed.incrementAndGet() == uris.size()) {
                                 progressPopup.dismissWithAnimation();
 
-                                showSuccessSnackBar(completed[0]);
+                                showSuccessSnackBar(completed.get());
                             }
                         }
 
@@ -1033,8 +1034,8 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 ).generate();
-            }
-        });
+            });
+        }
     }
 
     private void showSuccessSnackBar(int amount) {
